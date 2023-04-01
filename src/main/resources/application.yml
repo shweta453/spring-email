@@ -1,0 +1,21 @@
+spring:
+  main:
+    banner-mode: OFF
+  application:
+    name: soh-email
+  datasource:
+    url: jdbc:mysql://localhost:3306/Spring-Email?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    initialization-mode: always
+    platform: mysql
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
